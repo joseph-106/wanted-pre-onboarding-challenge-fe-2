@@ -1,0 +1,24 @@
+{
+  "name": "wanted-pre-onboarding-challenge-fe-2",
+  "version": "1.0.0",
+  "description": "- todolistData\r   - 할 일 목록의 데이터 객체를 담는 배열입니다\r   - 태그들은 `Nullable type`으로 처리했습니다",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseph-106/wanted-pre-onboarding-challenge-fe-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseph-106/wanted-pre-onboarding-challenge-fe-2/issues"
+  },
+  "homepage": "https://github.com/joseph-106/wanted-pre-onboarding-challenge-fe-2#readme",
+  "devDependencies": {
+    "jsdoc": "^3.6.11"
+  }
+}
