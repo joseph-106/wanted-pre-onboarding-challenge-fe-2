@@ -68,8 +68,8 @@
 
 - deleteTodo
   - 할 일을 삭제하는 함수입니다
-  - 특정 할 일만 삭제하는 경우 아이디를 `Optional parameter`로 가집니다
-  - 특정 할 일의 특정 태그만 삭제하는 경우 태그 위치를 `Optional parameter`로 가집니다
+  - 특정 할 일의 모든 태그를 삭제하는 경우 아이디만 `Optional parameter`로 가집니다
+  - 특정 할 일의 특정 태그만 삭제하는 경우 태그 위치도 `Optional parameter`로 가집니다
 
 ```
 /**
