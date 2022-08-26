@@ -4,7 +4,7 @@
 
 - todoDataList
   - 할 일 목록의 데이터 객체를 담는 배열입니다
-  - 태그들은 `Optional property`으로 처리했습니다
+  - 태그들은 `Optional property`로 처리했습니다
   - `typedef`로 todoData를 따로 선언하고 todoDataList 배열에 넣어줬습니다
 
 ```
@@ -48,7 +48,7 @@
  * ID를 기반으로 특정 할 일을 조회할 수 있다.
  * @param {string} [id] - 아이디
  * @returns {Array<todoData> | todoData} - 데이터
- *//
+ */
 
 ```
 
