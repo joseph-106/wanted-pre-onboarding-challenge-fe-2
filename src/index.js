@@ -25,7 +25,18 @@ const todoDataList = [];
  * @param {string} category - 카테고리
  * @param {string[]} [tags] - 태그들
  */
-const createTodo = (content, category, tags) => {};
+const createTodo = (content, category, tags) => {
+  if (!content || !category)
+    return console.log("내용과 카테고리를 모두 입력해주세요.");
+  if (!tags) tags = [];
+  todoDataList.push({
+    id: `${Date.now()}`,
+    content: content,
+    completed: false,
+    category: category,
+    tags: tags,
+  });
+};
 
 /**
  * 모든 할 일을 조회할 수 있다.
@@ -33,7 +44,12 @@ const createTodo = (content, category, tags) => {};
  * @param {string} [id] - 아이디
  * @returns {Array<todoData> | todoData} - 데이터
  */
-const readTodo = (id) => {};
+const readTodo = (id) => {
+  if (!id) return console.log(todoDataList);
+  return todoDataList[id] === undefined
+    ? console.log("아이디에 해당하는 할 일 데이터가 없습니다.")
+    : console.log(todoDataList[id]);
+};
 
 /**
  * ID를 제외한 모든 속성을 수정할 수 있다.
@@ -41,7 +57,11 @@ const readTodo = (id) => {};
  * @param {string} id - 아이디
  * @param {number} [tagIndex] - 태그 위치
  */
-const updateTodo = (id, tagIndex) => {};
+const updateTodo = (id, tagIndex) => {
+  if (!id) return console.log("아이디를 입력해주세요.");
+  if (tagIndex) return console.log("특정 태그를 수정합니다.");
+  return console.log("할 일 데이터를 수정합니다.");
+};
 
 /**
  * ID를 기반으로 특정 할 일을 삭제할 수 있다.
@@ -51,4 +71,14 @@ const updateTodo = (id, tagIndex) => {};
  * @param {string} [id] - 아이디
  * @param {number} [tagIndex] - 태그 위치
  */
-const deleteTodo = (id, tagIndex) => {};
+const deleteTodo = (id, tagIndex) => {
+  if (!id && !tagIndex) todoDataList.splice(0);
+  if (!id && tagIndex)
+    return console.log("해당 태그를 삭제할 할 일의 아이디를 입력해주세요.");
+  if (todoDataList[id] === undefined)
+    return console.log("아이디에 해당하는 할 일 데이터가 없습니다.");
+  const targetIndex = todoDataList.findIndex((todo) => todo.id === id);
+  tagIndex
+    ? todoDataList[targetIndex].tags.splice(tagIndex, 1)
+    : todoDataList[targetIndex].tags.splice(0);
+};
