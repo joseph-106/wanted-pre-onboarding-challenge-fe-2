@@ -26,11 +26,12 @@
   - 내용없이 추가할 수 없다
 
 ```
+/**
  * 할 일을 추가하는 함수입니다.
  * @param {string} content - 내용
  * @param {string} category - 카테고리
  * @param {string[]} [tags] - 태그들
-
+ */
 ```
 
 - readTodo
@@ -43,7 +44,6 @@
  * @param {string} [id] - 아이디
  * @returns {Array<todoData> | todoData} - 데이터
  */
-
 ```
 
 - updateTodo
@@ -56,7 +56,6 @@
  * @param {string} id - 아이디
  * @param {number} [tagIndex] - 태그 위치
  */
-
 ```
 
 - deleteTodo
@@ -71,5 +70,4 @@
  * @param {string} [id] - 아이디
  * @param {number} [tagIndex] - 태그 위치
  */
-
 ```
