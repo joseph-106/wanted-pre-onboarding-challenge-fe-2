@@ -1,11 +1,12 @@
 {
   "name": "wanted-pre-onboarding-challenge-fe-2",
   "version": "1.0.0",
-  "description": "- todolistData\r   - 할 일 목록의 데이터 객체를 담는 배열입니다\r   - 태그들은 `Nullable type`으로 처리했습니다",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "doc": "jsdoc -c jsdoc.json"
+    "doc": "jsdoc -c jsdoc.json",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,33 @@
   },
   "homepage": "https://github.com/joseph-106/wanted-pre-onboarding-challenge-fe-2#readme",
   "devDependencies": {
-    "jsdoc": "^3.6.11"
+    "jsdoc": "^3.6.11",
+    "typescript": "^4.8.3"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "bluebird": "^3.7.2",
+    "catharsis": "^0.9.0",
+    "entities": "^2.1.0",
+    "escape-string-regexp": "^2.0.0",
+    "graceful-fs": "^4.2.10",
+    "js2xmlparser": "^4.0.2",
+    "klaw": "^3.0.0",
+    "linkify-it": "^3.0.3",
+    "lodash": "^4.17.21",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^8.6.4",
+    "marked": "^4.0.19",
+    "mdurl": "^1.0.1",
+    "mkdirp": "^1.0.4",
+    "requizzle": "^0.2.3",
+    "strip-json-comments": "^3.1.1",
+    "taffydb": "^2.6.2",
+    "uc.micro": "^1.0.6",
+    "underscore": "^1.13.4",
+    "xmlcreate": "^2.0.4"
   }
 }
